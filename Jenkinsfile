@@ -1,5 +1,5 @@
+node{
 
-def blagged
 stage('Clone Repository')
 {
 	checkout scm
@@ -7,7 +7,7 @@ stage('Clone Repository')
 stage('Build Image')
 {steps
 	{
-		blagged = docker.build("jhop94/blagged")
+		sh docker build . -t blagged:1.0
 	} 
 }
 stage('Push image')
@@ -18,4 +18,4 @@ stage('Push image')
 		app.push("latest")
 	}
 }
-
+}
