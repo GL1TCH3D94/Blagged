@@ -1,2 +1,0 @@
-# Blagged
-Web App
