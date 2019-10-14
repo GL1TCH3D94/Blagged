@@ -7,7 +7,7 @@ stage('Clone Repository')
 stage('Build Image')
 {steps
 	{
-		sh docker build . -t blagged:1.0
+		sh sudo docker build . -t blagged:1.0
 	} 
 }
 stage('Push image')
