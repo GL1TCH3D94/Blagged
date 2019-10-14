@@ -1,3 +1,4 @@
+node{
 def blagged
 stage('Clone Repository')
 {
@@ -17,4 +18,4 @@ stage('Push image')
 		app.push("latest")
 	}
 }
-
+}
