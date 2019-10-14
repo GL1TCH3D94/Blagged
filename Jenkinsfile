@@ -2,7 +2,7 @@ node{
 def blagged
 stage('Clone Repository')
 {
-	checkout smc
+	checkout scm
 }
 stage('Build')
 {steps
