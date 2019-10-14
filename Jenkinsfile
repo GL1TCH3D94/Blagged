@@ -1,9 +1,12 @@
-
+def blagged
+stage('Clone Repository')
 {
+	smc checkout
+}
 stage('Build')
 {steps
 	{
-		sh docker build -t blagged:1.0
+		blagged = docker.build("jhop94/blagged")
 	} 
 }
 stage('Push image')
@@ -14,4 +17,4 @@ stage('Push image')
 		app.push("latest")
 	}
 }
-}
+
