@@ -1,8 +1,8 @@
-
+def blagged
 stage('Build')
 {steps
 	{
-		sh docker build . -t Blagged:1.0
+		blagged = docker.build("jhop94/blagged")
 	} 
 }
 stage('Push image')
