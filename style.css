@@ -1,0 +1,24 @@
+.masthead
+{
+  text-align: center;
+  color: white;
+  background-image: url("Images/test_image.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.row2
+{
+  height: 250px;
+}
+#mainNav
+{
+  padding: 2px;
+}
+.form-inline
+{
+  margin-left: 20px;
+}
