@@ -1,13 +1,9 @@
-nginx{
-def blagged
 
-stage('Clone Repository')
-{
-	checkout scm
-}
 stage('Build')
-{
-	blagged = docker.build("jaho2/Blagged")
+{steps
+	{
+		sh docker build . -t Blagged:1.0
+	} 
 }
 stage('Push image')
 {
