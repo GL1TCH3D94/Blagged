@@ -1,5 +1,5 @@
 
-
+{
 stage('Build')
 {steps
 	{
@@ -14,4 +14,4 @@ stage('Push image')
 		app.push("latest")
 	}
 }
-
+}
