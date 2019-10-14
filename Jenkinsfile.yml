@@ -1,4 +1,8 @@
 def blagged
+stage('Clone Repository')
+{
+	smc checkout
+}
 stage('Build')
 {steps
 	{
