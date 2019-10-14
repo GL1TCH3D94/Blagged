@@ -6,7 +6,7 @@ stage('Clone Repository')
 }
 stage('Build')
 {
-	blagged = docker.build()
+	blagged = docker.build('jaho/Blagged)
 }
 stage('Push image')
 {
