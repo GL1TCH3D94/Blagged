@@ -1,7 +1,12 @@
 def blagged
+
+stage('Clone Repository')
+{
+	checkout scm
+}
 stage('Build')
 {
-	app = docker.build()
+	blagged = docker.build()
 }
 stage('Push image')
 {
