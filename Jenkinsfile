@@ -1,13 +1,9 @@
 
-def blagged
-stage('Clone Repository')
-{
-	smc checkout
-}
+
 stage('Build')
 {steps
 	{
-		blagged = docker.build("jhop94/blagged")
+		sh docker build -t blagged:1.0
 	} 
 }
 stage('Push image')
