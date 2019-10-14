@@ -1,10 +1,10 @@
-nginx{
+
 def blagged
 stage('Clone Repository')
 {
 	checkout scm
 }
-stage('Build')
+stage('Build Image')
 {steps
 	{
 		blagged = docker.build("jhop94/blagged")
@@ -18,4 +18,4 @@ stage('Push image')
 		app.push("latest")
 	}
 }
-}
+
